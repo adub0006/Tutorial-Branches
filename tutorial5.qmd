@@ -25,3 +25,13 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+data(package = "palmerpenguins")
+
+ggplot(penguins, aes(x = bill_depth_mm, y = flipper_length_mm, color = species)) +
+    geom_point()
+```
